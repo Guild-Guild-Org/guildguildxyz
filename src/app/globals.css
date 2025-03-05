@@ -1,57 +1,59 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+/* Base styles for light/dark mode */
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #000000;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  .dark {
+    --background: #000000;
+    --foreground: #ffffff;
+  }
 
-h1 {
-  font-size: 2rem;
-}
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    transition: background-color 0.2s, color 0.2s;
+  }
 
-h2 {
-  font-size: 1.75rem;
-}
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
 
-h3 {
-  font-size: 1.35rem;
-}
+  h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
 
-h4 {
-  font-size: 1.25rem;
-}
+  h3 {
+    font-size: 1.35rem;
+    font-weight: bold;
+  }
 
-h5 {
-  font-size: 1.15rem;
-}
+  h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
 
-h6 {
-  font-size: 1rem;
-}
+  h5 {
+    font-size: 1.15rem;
+    font-weight: bold;
+  }
 
-p {
-  margin-top: 15px;
-  margin-bottom: 25px;
+  h6 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  p {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
 }
 
 .container {
