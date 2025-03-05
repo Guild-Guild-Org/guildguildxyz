@@ -15,7 +15,9 @@ export default function Hamburger() {
   };
 
   const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    // Force theme to be the opposite of current theme
+    const newTheme = theme === "dark" || theme === undefined ? "light" : "dark";
+    setTheme(newTheme);
   };
 
   const closeMenu = () => {
@@ -71,7 +73,7 @@ export default function Hamburger() {
 
       {/* Navigation Menu */}
       <div 
-        className={`fixed top-0 right-0 h-screen w-64 bg-white dark:bg-gray-900 shadow-lg transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-screen w-64 bg-black shadow-lg transform transition-transform duration-300 ease-in-out ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -79,7 +81,7 @@ export default function Hamburger() {
           <div className="flex justify-end">
             <button 
               onClick={closeMenu}
-              className="text-gray-800 dark:text-gray-200"
+              className="text-white"
               aria-label="Close menu"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -94,10 +96,10 @@ export default function Hamburger() {
                   <Link 
                     href={item.path}
                     onClick={closeMenu}
-                    className={`block py-2 px-4 rounded transition-colors ${
+                    className={`block py-2 px-4 rounded transition-colors text-white ${
                       pathname === item.path 
-                        ? 'bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-white font-bold' 
-                        : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
+                        ? 'font-bold border-b-2 border-white' 
+                        : 'hover:bg-gray-900'
                     }`}
                   >
                     {item.name}
