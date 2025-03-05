@@ -20,23 +20,23 @@ export default function Hamburger() {
     <div>
       {/* Hamburger Button */}
       <button
-        className="relative z-50 w-10 h-10 bg-gray-200 dark:bg-gray-800 rounded-full flex items-center justify-center focus:outline-none"
+        className="relative z-50 w-10 h-10 bg-gray-200 dark:bg-black rounded-full flex items-center justify-center focus:outline-none border dark:border-white"
         onClick={toggleMenu}
         aria-label={isOpen ? "Close menu" : "Open menu"}
       >
         <div className="w-5 h-5 flex flex-col justify-center items-center">
           <span 
-            className={`block w-5 h-0.5 bg-gray-800 dark:bg-gray-200 transition-all duration-200 ${
+            className={`block w-5 h-0.5 bg-black dark:bg-white transition-all duration-200 ${
               isOpen ? 'absolute rotate-45' : ''
             }`}
           />
           <span 
-            className={`block w-5 h-0.5 bg-gray-800 dark:bg-gray-200 transition-all duration-200 ${
+            className={`block w-5 h-0.5 bg-black dark:bg-white transition-all duration-200 ${
               isOpen ? 'opacity-0' : 'my-1'
             }`}
           />
           <span 
-            className={`block w-5 h-0.5 bg-gray-800 dark:bg-gray-200 transition-all duration-200 ${
+            className={`block w-5 h-0.5 bg-black dark:bg-white transition-all duration-200 ${
               isOpen ? 'absolute -rotate-45' : ''
             }`}
           />
