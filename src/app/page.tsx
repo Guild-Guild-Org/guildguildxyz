@@ -120,10 +120,10 @@ export default function Home() {
             minimal bureaucratic overhead.
           </p>
         </div>
-        
+
         <div className="flex gap-4 items-start flex-col py-20">
           <h2 className="">The Guild Guild Strategy</h2>
-          <p>> we are here</p>
+          <p>{">"} we are here</p>
           <p>
             <strong>Phase 1: Knowledge Sharing & Community</strong> We&apos;re
             documenting patterns from pioneering examples like Protocol Guild
@@ -139,9 +139,9 @@ export default function Home() {
           </p>
           <p>
             <strong>Phase 3: Nested Coordination</strong> Our long-term vision
-            includes organizing &quot;guilds of guilds&quot; that enable strategic
-            coordination across specialized domains while preserving tactical
-            autonomy within individual guilds.
+            includes organizing &quot;guilds of guilds&quot; that enable
+            strategic coordination across specialized domains while preserving
+            tactical autonomy within individual guilds.
           </p>
         </div>
         <div className="flex gap-4 items-center flex-col sm:flex-row py-20">
