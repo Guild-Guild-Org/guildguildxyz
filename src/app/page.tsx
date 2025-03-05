@@ -65,7 +65,7 @@ export default function Home() {
             funding destination and a group identity.
           </p>
         </div>
-        <div className="flex gap-4 items-center flex-col py-20">
+        <div className="max-w-xl flex gap-4 items-start flex-col py-20">
           <h3>Guild Primitives</h3>
           <p>Guild infrastructure is built on proven Ethereum primitives:</p>
           <p>
@@ -93,10 +93,10 @@ export default function Home() {
             peer-based contribution evaluation for fair resource allocation.
           </p>
         </div>
-        <div className="flex gap-4 items-start flex-col py-20">
-          <h3 className="min-w-xs sm:pr-4 sm:border-r-2 sm:border-white-900">
+        <div className="flex gap-4 items-start flex-col py-20 max-w-xl">
+          <h2 className="min-w-xs sm:pr-4 sm:border-r-2 sm:border-white-900">
             The Future of Guilds
-          </h3>
+          </h2>
           <p>
             Guilds significantly reduce coordination costs by minimizing
             bureaucracy and optimizing resource allocation. They create a
@@ -121,7 +121,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex gap-4 items-start flex-col py-20">
+        <div className="flex gap-4 items-start flex-col py-20 max-w-xl">
           <h2 className="">The Guild Guild Strategy</h2>
           <p>{">"} we are here</p>
           <p>
@@ -175,7 +175,7 @@ export default function Home() {
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://github.com/oovg/guildguildxyz"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -186,11 +186,11 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Learn
+          Go to Repo →
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://discord.gg/JRvgcnha"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -201,12 +201,11 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Examples
+          Go to Discord →
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
+          href="https://paragraph.xyz/@guildguild/guild-guild"
           rel="noopener noreferrer"
         >
           <Image
@@ -216,7 +215,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Go to nextjs.org →
+          Read Announcement →
         </a>
       </footer>
     </div>
