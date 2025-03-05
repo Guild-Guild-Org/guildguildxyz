@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import Hamburger from "@/components/Navigation/Hamburger";
-import ThemeToggle from "@/components/ThemeToggle";
+import Header from "@/components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,12 +35,7 @@ export default function RootLayout({
           enableSystem={false}
           storageKey="theme"
         >
-          <div className="fixed top-4 right-4 z-50 flex items-center">
-            <div className="mr-4">
-              <ThemeToggle />
-            </div>
-            <Hamburger />
-          </div>
+          <Header />
           {children}
         </ThemeProvider>
       </body>
