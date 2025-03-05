@@ -16,8 +16,9 @@ export default function Hamburger() {
 
   const toggleTheme = () => {
     // Force theme to be the opposite of current theme
-    setTheme(theme === "dark" ? "light" : "dark");
-    console.log("Toggling theme from", theme, "to", theme === "dark" ? "light" : "dark");
+    const newTheme = theme === "dark" ? "light" : "dark";
+    setTheme(newTheme);
+    console.log("Toggling theme from", theme, "to", newTheme);
   };
 
   const closeMenu = () => {
