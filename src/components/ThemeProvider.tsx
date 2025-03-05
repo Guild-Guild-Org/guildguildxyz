@@ -12,8 +12,8 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
     setMounted(true);
     
     // Log the current theme on mount
-    if (typeof window !== 'undefined') {
-      console.log("Initial theme:", document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+    if (typeof window !== &rsquo;undefined&rsquo;) {
+      console.log("Initial theme:", document.documentElement.classList.contains(&rsquo;dark&rsquo;) ? &rsquo;dark&rsquo; : &rsquo;light&rsquo;);
     }
   }, []);
 
