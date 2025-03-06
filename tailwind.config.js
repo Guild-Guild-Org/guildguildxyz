@@ -1,13 +1,20 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: 'class',
+  darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#4285f4",
+        secondary: "#34a853",
+        accent: "#32cd32",
+        foreground: "rgba(var(--foreground-rgba))",
+        background: "rgba(var(--background-rgba))",
+      },
+    },
   },
-  plugins: [],
-}
+  // ... other configurations
+};
