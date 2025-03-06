@@ -10,10 +10,12 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-start sm:items-start container">
-        <div className="hero">
-          <DynamicGraph />
+        <div className="hero-container">
+          <div className="hero">
+            <DynamicGraph />
+          </div>
         </div>
-        <div className="hero-content">
+        <div className="hero-content container">
           <h1>Guild Guild</h1>
           <h3>
             A locus of coordination for gathering and distributing the means of
@@ -28,25 +30,24 @@ export default function Home() {
             </li>
             <li>Network Guilds for further disambiguation of autonomy</li>
           </ol>
-        </div>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://paragraph.xyz/@guildguild/guild-guild"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read Announcement
-          </a>
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://discord.gg/JRvgcnha"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Join Discord
-          </a>
+          <div className="flex gap-4 items-center flex-col sm:flex-row">
+            <a
+              className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+              href="https://paragraph.xyz/@guildguild/guild-guild"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read Announcement
+            </a>
+            <a
+              className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+              href="https://discord.gg/JRvgcnha"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Join Discord
+            </a>
+          </div>
         </div>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row py-20">
