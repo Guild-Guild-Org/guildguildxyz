@@ -9,7 +9,7 @@ const DynamicGraph = dynamic(() => import("@/components/Graph"), {
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start container">
+      <main className="flex flex-col gap-8 row-start-2 items-start sm:items-start container">
         <div className="hero">
           <DynamicGraph />
         </div>
@@ -19,8 +19,8 @@ export default function Home() {
             A locus of coordination for gathering and distributing the means of
             Guilding on Ethereum.
           </h3>
-          <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-            <li className="mb-2">
+          <ol className="list-inside list-decimal text-sm text-left font-[family-name:var(--font-geist-mono)]">
+            <li className="mt-8 mb-2">
               Organize knowledge commons and distribute best practices
             </li>
             <li className="mb-2">
@@ -156,7 +156,7 @@ export default function Home() {
             tactical autonomy within individual guilds.
           </p>
         </div>
-        <div className="flex gap-4 items-center flex-col sm:flex-row py-20">
+        <div className="flex gap-4 items-start flex-col sm:flex-row py-20">
           <h2 className="min-w-xs sm:pr-4 sm:border-r-2 sm:border-white-900">
             Grant Program
           </h2>
