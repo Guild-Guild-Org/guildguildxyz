@@ -7,28 +7,20 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start container">
         <h1>Guild Guild</h1>
         <h3>
-          A locus of coordination for gathering and distributing the Means of
-          Guilding in Ethereum.
+          A locus of coordination for gathering and distributing the means of
+          Guilding on Ethereum.
         </h3>
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
             Organize knowledge commons and distribute best practices
           </li>
           <li className="mb-2">
-            Support organizers of guilds and builders of tools
+            Support builders of tools and organizers of guilds
           </li>
-          <li>Network Guilds for further computation savings</li>
+          <li>Network Guilds for further disambiguation of autonomy</li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://discord.gg/JRvgcnha"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Join Discord
-          </a>
           <a
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
             href="https://paragraph.xyz/@guildguild/guild-guild"
@@ -36,6 +28,14 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             Read Announcement
+          </a>
+          <a
+            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+            href="https://discord.gg/JRvgcnha"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Join Discord
           </a>
         </div>
 
@@ -156,18 +156,20 @@ export default function Home() {
                 We&apos;re preparing a grant program for builders supporting the
                 guild ecosystem.
               </strong>{" "}
+            </p>
+            <p>
               Your support will help catalyze a novel organizational ecosystem
               on Ethereum where contributors can focus on value creation and
               funders can confidently support public goods.
             </p>
-            <p>Priority areas include:</p>
+            <p className="mt-4">Priority areas include:</p>
             <ul>
               <li>research and publishing best practices</li>
               <li>primitive improvements</li>
               <li>contribution tracking tools</li>
               <li>cross-guild coordination mechanisms</li>
             </ul>
-            <p>
+            <p className="mt-4">
               Join us in building infrastructure for the next generation of
               collective power.
             </p>

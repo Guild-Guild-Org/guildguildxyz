@@ -44,3 +44,8 @@ h6 {
 .card {
   width: 300px;
 }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}

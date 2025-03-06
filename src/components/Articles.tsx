@@ -1,7 +1,9 @@
 export default function Articles() {
   return (
     <div className="w-full font-[family-name:var(--font-geist-sans)]">
-      <div className="w-full flex flex-col sm:flex-row gap-8">Articles</div>
+      <div className="w-full flex flex-col sm:flex-row gap-8">
+        Articles about Guilding in Ethereum
+      </div>
       <div className="w-full flex flex-col sm:flex-row gap-8 flex-wrap">
         <a
           className="card"
