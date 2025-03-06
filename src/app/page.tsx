@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Articles from "@/components/Articles";
 
 export default function Home() {
   return (
@@ -51,6 +52,7 @@ export default function Home() {
             while reducing coordination costs.
           </p>
         </div>
+        <Articles />
         <div className="flex gap-4 items-center flex-col sm:flex-row py-20">
           <h3 className="min-w-xs sm:pr-4 sm:border-r-2 sm:border-white-900">
             The Primitive: Self-curating Registry
