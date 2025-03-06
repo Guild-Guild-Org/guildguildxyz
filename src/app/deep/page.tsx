@@ -1,3 +1,10 @@
+"use client";
+import dynamic from "next/dynamic";
+
+const DynamicGraph = dynamic(() => import("@/components/Graph"), {
+  ssr: false,
+});
+
 export default function DeepPage() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 font-[family-name:var(--font-geist-sans)]">
@@ -8,13 +15,12 @@ export default function DeepPage() {
             On the deep dive page, we explore Guild concepts and components in
             greater detail.
           </p>
+          <div className="hero">
+            <DynamicGraph />
+          </div>
         </div>
         <div className="flex gap-4 items-start flex-col py-20">
           <h2 className="">The Machine</h2>
-          <p className="term">
-            <strong>term</strong>
-          </p>
-          <p className="desc">definition</p>
         </div>
         <div className="flex gap-4 items-start flex-col py-20">
           <h2 className="">The Benefits</h2>

@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-rgb: 255, 255, 255;
+  --foreground-rgba: 0, 0, 0, 1;
+  --background-rgba: 255, 255, 255, 1;
 }
 
 .dark {
-  --foreground-rgb: 255, 255, 255;
-  --background-rgb: 0, 0, 0;
+  --foreground-rgba: 255, 255, 255, 1;
+  --background-rgba: 0, 0, 0, 1;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background-color: rgb(var(--background-rgb));
+  color: rgba(var(--foreground-rgba));
+  background-color: rgba(var(--background-rgba));
 }
 
 h1 {
@@ -40,6 +40,34 @@ h6 {
 }
 
 /* components */
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 5;
+}
+
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.circle {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.hero-content {
+  z-index: 1;
+}
 
 .card {
   width: 300px;
