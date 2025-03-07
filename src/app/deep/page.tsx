@@ -7,17 +7,18 @@ const DynamicGraph = dynamic(() => import("@/components/Graph"), {
 
 export default function DeepPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 font-[family-name:var(--font-geist-sans)]">
-      <div className="container max-w-5xl mx-auto">
-        <h1 className="text-4xl mb-8">
-          Guilding on Ethereum: A Deep Dive
-        </h1>
-
-        <div className="hero mb-12">
-          <DynamicGraph />
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <main className="flex flex-col gap-8 row-start-2 items-start sm:items-start container">
+        <div className="hero-container">
+          <div className="hero">
+            <DynamicGraph />
+          </div>
+        </div>
+        <div className="hero-content container">
+          <h1>Deep Dive</h1>
         </div>
 
-        <section className="mb-12 font-[family-name:var(--font-geist-sans)]">
+        <section className="mb-12">
           <h2 className="text-3xl mb-6">Guilds: The Machine</h2>
           <p className="mb-6">
             Ethereum guilds are elegant coordination mechanisms built from
@@ -29,9 +30,7 @@ export default function DeepPage() {
 
           <h3 className="text-2xl mt-8 mb-4">Base Components</h3>
 
-          <h4 className="text-xl mt-6 mb-2">
-            Self-Curating Registry (SCR)
-          </h4>
+          <h4 className="text-xl mt-6 mb-2">Self-Curating Registry (SCR)</h4>
           <p className="mb-4">
             A self-curating registry is the foundation of any guild - an
             on-chain record of contributors and their relative weights within
@@ -259,9 +258,7 @@ export default function DeepPage() {
 
           <h3 className="text-2xl mt-6 mb-4">Weighting Methods</h3>
 
-          <h4 className="text-xl mt-4 mb-2">
-            Qualitative Approaches
-          </h4>
+          <h4 className="text-xl mt-4 mb-2">Qualitative Approaches</h4>
           <ul className="list-disc pl-8 mb-4">
             <li>
               <strong>Simple Time-Based</strong>: Weights determined by time
@@ -277,9 +274,7 @@ export default function DeepPage() {
             </li>
           </ul>
 
-          <h4 className="text-xl mt-4 mb-2">
-            Quantitative Approaches
-          </h4>
+          <h4 className="text-xl mt-4 mb-2">Quantitative Approaches</h4>
           <ul className="list-disc pl-8 mb-6">
             <li>
               <strong>Metric-Based</strong>: Objective measurements of output or
@@ -306,9 +301,11 @@ export default function DeepPage() {
             of guilds" - nested registries that coordinate across specialized
             domains:
           </p>
-          <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded mb-4">
-            Public Goods Fund / | \ PG1 PG2 PG3 (Each a guild with its own
-            registry)
+          <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded mb-4 text-center">
+            Public Goods Fund <br /> / | \ <br />
+            PG1 PG2 PG3 <br />
+            <br />
+            (Each a guild with its own registry)
           </pre>
           <p className="mb-4">This structure enables:</p>
           <ul className="list-disc pl-8 mb-6">
@@ -372,7 +369,7 @@ export default function DeepPage() {
             </dd>
           </dl>
         </section>
-      </div>
-    </main>
+      </main>
+    </div>
   );
 }

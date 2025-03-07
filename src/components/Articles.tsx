@@ -6,7 +6,7 @@ export default function Articles() {
       </div>
       <div className="w-full flex flex-col sm:flex-row gap-8 flex-wrap">
         <a
-          className="card"
+          className="card hover:text-accent"
           href="https://trent.mirror.xyz/GDDRqetgglGR5IYK1uTXxLalwIH6pBF9nulmY9zarUw"
           rel="noopener noreferrer"
           target="_blank"
@@ -21,7 +21,7 @@ export default function Articles() {
           </div>
         </a>
         <a
-          className="card"
+          className="card hover:text-accent"
           href="https://trent.mirror.xyz/MsXtV_TGZHp05FN_qmzeT8bBc1lRghR3Y0TPvAd-WrA"
           rel="noopener noreferrer"
           target="_blank"
@@ -36,7 +36,7 @@ export default function Articles() {
           </div>
         </a>
         <a
-          className="card"
+          className="card hover:text-accent"
           href="https://tim.mirror.xyz/srVdVopOFhD_ZoRDR50x8n5wmW3aRJIrNEAkpyQ4_ng"
           rel="noopener noreferrer"
           target="_blank"
@@ -49,7 +49,7 @@ export default function Articles() {
           </div>
         </a>
         <a
-          className="card"
+          className="card hover:text-accent"
           href="https://trent.mirror.xyz/DLYnuoCN-Hwuu0s4G_XZVdI-c2OD2KP3UAg_UFB9MpY"
           rel="noopener noreferrer"
           target="_blank"
@@ -63,7 +63,7 @@ export default function Articles() {
         </a>
 
         <a
-          className="card"
+          className="card hover:text-accent"
           href="https://trent.mirror.xyz/Lehny46ZMdxMEow0XE_RgowV2ntkp30chJRWPCEYbGQ"
           rel="noopener noreferrer"
           target="_blank"
