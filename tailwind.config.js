@@ -6,15 +6,7 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    extend: {
-      colors: {
-        primary: "#4285f4",
-        secondary: "#34a853",
-        accent: "#32cd32",
-        foreground: "rgba(var(--foreground-rgba))",
-        background: "rgba(var(--background-rgba))",
-      },
-    },
+    extend: {},
   },
   // ... other configurations
 };
