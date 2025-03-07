@@ -73,10 +73,23 @@ export default function DeepPage() {
             </li>
           </ul>
           <p className="mb-6">
-            Most guilds employ simple majority voting with optional weighting
-            systems. The governance layer is intentionally minimal, focusing
-            only on maintaining an accurate representation of the collective
-            while preserving individual autonomy.
+            The simplest voting system is one person/one vote for self-curation
+            of the registry, though weighted voting is an option. The governance
+            layer is intentionally minimal, focusing only on maintaining an
+            accurate representation of the contributor base while preserving
+            individual autonomy.
+          </p>
+          <p className="mb-6">
+            Protocols like{" "}
+            <a
+              href="https://daohaus.club"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Moloch V3
+            </a>{" "}
+            allows registries to remain self-curating by utilizing
+            non-transferrable tokens for governance.
           </p>
           <h3 className="mt-6 mb-2">Allocation</h3>
           <h4 className="mt-6 mb-2">Splitter</h4>
@@ -95,8 +108,16 @@ export default function DeepPage() {
             <li>Optional vesting or lockup mechanisms</li>
           </ul>
           <p className="mb-6">
-            Using tools like 0xSplit, guilds can implement sophisticated
-            distribution logic while maintaining low operational overhead.
+            Using tools like{" "}
+            <a
+              href="https://splits.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Splits
+            </a>{" "}
+            , guilds can implement sophisticated distribution logic while
+            maintaining low operational overhead.
           </p>
 
           <h4 className="mt-6 mb-2">Streaming</h4>
@@ -111,8 +132,16 @@ export default function DeepPage() {
             <li>Smoother funding relationships with sponsors</li>
           </ul>
           <p className="mb-6">
-            Protocols like Superfluid enable guilds to implement sophisticated
-            streaming arrangements that align funding with ongoing contribution.
+            Protocols like{" "}
+            <a
+              href="https://superfluid.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Superfluid
+            </a>{" "}
+            enable guilds to implement sophisticated streaming arrangements that
+            align funding with ongoing contribution.
           </p>
 
           <h3 className="mt-8 mb-4">Additive Components</h3>
@@ -129,9 +158,16 @@ export default function DeepPage() {
             <li>Working group roles for specific projects</li>
           </ul>
           <p className="mb-6">
-            Tools like Hats Protocol allow guilds to implement flexible role
-            systems that evolve with their needs while preserving core
-            decentralization.
+            Tools like{" "}
+            <a
+              href="https://www.hatsprotocol.xyz/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Hats Protocol
+            </a>{" "}
+            allow guilds to implement flexible role systems that evolve with
+            their needs while preserving core decentralization.
           </p>
 
           <h4 className="mt-6 mb-2">Contribution Tracking</h4>
@@ -140,7 +176,17 @@ export default function DeepPage() {
             member contributions:
           </p>
           <ul className="list-disc pl-8 mb-4">
-            <li>Peer-based evaluation systems (like Coordinape)</li>
+            <li>
+              Peer-based evaluation systems (like{" "}
+              <a
+                href="https://app.coordinape.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Coordinape
+              </a>{" "}
+              )
+            </li>
             <li>Quantitative metrics for measurable outputs</li>
             <li>Qualitative assessment frameworks</li>
             <li>Hybrid approaches combining multiple signals</li>
