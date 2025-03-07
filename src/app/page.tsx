@@ -227,7 +227,7 @@ export default function Home() {
                 guild ecosystem.
               </strong>{" "}
             </p>
-            <p>
+            <p className="mt-4">
               Your support will help catalyze a novel organizational ecosystem
               on Ethereum where contributors can focus on value creation and
               funders can confidently support public goods.
