@@ -174,10 +174,10 @@ export default function Home() {
             bureaucracy and optimizing resource allocation. They create a
             positive-sum arrangement where contributors focus on value creation
             while funders gain confidence in their support of public goods. The
-            key innovation is separating strategic coordination at the
-            &quot;guild of guilds&quot; level from tactical execution within
-            specialized domains, preserving local autonomy while enabling
-            system-wide alignment.
+            key innovation is the simplicity of internal form, allowing for
+            minimal governance and maximal individual autonomy. Being wrapped as
+            an shared address offers multi-modal input/output capabilities
+            throughout the Ethereum ecosystem.
           </p>
           <p>
             With proper support, this emerging ecosystem of guilds could evolve
@@ -185,11 +185,8 @@ export default function Home() {
             system for capital allocation across the ecosystem. Like mycelium in
             nature, this network would direct resources to their highest impact
             points, develop specialized nodes for particular domains, and
-            optimize decision-making by delegating it to appropriate local
-            contexts. This architecture maintains autonomy at local levels while
-            establishing unprecedented coordination capabilities at scale,
-            allowing for emergent intelligence in resource allocation with
-            minimal bureaucratic overhead.
+            optimize decision-making by keeping tactical execution within
+            appropriate local contexts.
           </p>
         </div>
 
@@ -197,11 +194,11 @@ export default function Home() {
           <h2 className="">The Guild Guild Strategy</h2>
           <p>{">"} we are here</p>
           <p>
-            <strong>Phase 1: Knowledge Sharing & Community</strong> We&apos;re
-            documenting patterns from pioneering examples like Protocol Guild
-            and creating a vibrant community of practice. Join our regular
-            knowledge-sharing sessions and access our growing library of
-            resources on guild formation.
+            <strong>{">"} Phase 1: Knowledge Sharing & Community</strong>{" "}
+            We&apos;re documenting patterns from pioneering examples like
+            Protocol Guild and creating a vibrant community of practice. Join
+            our regular knowledge-sharing sessions and access our growing
+            library of resources on guild formation.
           </p>
           <p>
             <strong>Phase 2: Guild Generator</strong> We&apos;re developing
