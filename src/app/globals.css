@@ -20,7 +20,9 @@ body {
   color: rgb(var(--foreground-rgb));
   background-color: rgb(var(--background-rgb));
 }
-
+a {
+  color: var(--color-accent);
+}
 a:hover {
   text-decoration: underline;
 }
