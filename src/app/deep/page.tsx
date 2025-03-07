@@ -21,6 +21,31 @@ export default function DeepPage() {
         </div>
         <div className="flex gap-4 items-start flex-col py-20">
           <h2 className="">The Machine</h2>
+          <h3>Base Components</h3>
+          <p>
+            <strong>Self-Curating Registry</strong>: On-chain record of who is
+            contributing and to what degree.
+          </p>
+          <p>
+            <strong>Base Governance</strong>: Method of keeping the registry
+            up-to-date. Curating Membership and weights.
+          </p>
+          <p>
+            <strong>Splitter</strong>: Automated distribution of received assets
+            according to registry data.
+          </p>
+          <p>
+            <strong>Streaming</strong>: Logic and method for streaming value
+          </p>
+          <h3>Extra Components</h3>
+          <p>
+            <strong>Roles</strong>: Method of granting permissioned roles with
+            finer control of operational elements.
+          </p>
+          <p>
+            <strong>Contribution Tracking</strong>: Method of tracking
+            contribution in order to generate weights for the registry.
+          </p>
         </div>
         <div className="flex gap-4 items-start flex-col py-20">
           <h2 className="">The Benefits</h2>
