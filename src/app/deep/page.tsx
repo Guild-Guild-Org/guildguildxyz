@@ -9,7 +9,7 @@ export default function DeepPage() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 font-[family-name:var(--font-geist-sans)]">
       <div className="container max-w-5xl mx-auto">
-        <h1 className="text-4xl font-bold mb-8">
+        <h1 className="text-4xl mb-8">
           Guilding on Ethereum: A Deep Dive
         </h1>
 
@@ -18,7 +18,7 @@ export default function DeepPage() {
         </div>
 
         <section className="mb-12 font-[family-name:var(--font-geist-sans)]">
-          <h2 className="text-3xl font-bold mb-6">Guilds: The Machine</h2>
+          <h2 className="text-3xl mb-6">Guilds: The Machine</h2>
           <p className="mb-6">
             Ethereum guilds are elegant coordination mechanisms built from
             simple components that work together to create powerful collective
@@ -27,9 +27,9 @@ export default function DeepPage() {
             groups to organize effectively while minimizing bureaucracy.
           </p>
 
-          <h3 className="text-2xl font-bold mt-8 mb-4">Base Components</h3>
+          <h3 className="text-2xl mt-8 mb-4">Base Components</h3>
 
-          <h4 className="text-xl font-bold mt-6 mb-2">
+          <h4 className="text-xl mt-6 mb-2">
             Self-Curating Registry (SCR)
           </h4>
           <p className="mb-4">
@@ -57,7 +57,7 @@ export default function DeepPage() {
             and up-to-date without requiring external oversight.
           </p>
 
-          <h4 className="text-xl font-bold mt-6 mb-2">Base Governance</h4>
+          <h4 className="text-xl mt-6 mb-2">Base Governance</h4>
           <p className="mb-4">
             Governance enables the registry to evolve over time through
             collective decision-making. Key governance functions include:
@@ -80,7 +80,7 @@ export default function DeepPage() {
             while preserving individual autonomy.
           </p>
 
-          <h4 className="text-xl font-bold mt-6 mb-2">Splitter</h4>
+          <h4 className="text-xl mt-6 mb-2">Splitter</h4>
           <p className="mb-4">
             The splitter component automatically distributes resources received
             by the guild according to the weights recorded in the registry.
@@ -100,7 +100,7 @@ export default function DeepPage() {
             distribution logic while maintaining low operational overhead.
           </p>
 
-          <h4 className="text-xl font-bold mt-6 mb-2">Streaming</h4>
+          <h4 className="text-xl mt-6 mb-2">Streaming</h4>
           <p className="mb-4">
             Resource streaming creates predictable, continuous flows of value to
             guild members, enabling:
@@ -116,9 +116,9 @@ export default function DeepPage() {
             streaming arrangements that align funding with ongoing contribution.
           </p>
 
-          <h3 className="text-2xl font-bold mt-8 mb-4">Extra Components</h3>
+          <h3 className="text-2xl mt-8 mb-4">Extra Components</h3>
 
-          <h4 className="text-xl font-bold mt-6 mb-2">Roles</h4>
+          <h4 className="text-xl mt-6 mb-2">Roles</h4>
           <p className="mb-4">
             Role management systems extend guild functionality by assigning
             specialized permissions to members:
@@ -135,7 +135,7 @@ export default function DeepPage() {
             decentralization.
           </p>
 
-          <h4 className="text-xl font-bold mt-6 mb-2">Contribution Tracking</h4>
+          <h4 className="text-xl mt-6 mb-2">Contribution Tracking</h4>
           <p className="mb-4">
             Contribution tracking mechanisms help guilds quantify and recognize
             member contributions:
@@ -153,9 +153,9 @@ export default function DeepPage() {
         </section>
 
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">The Benefits of Guilding</h2>
+          <h2 className="text-3xl mb-6">The Benefits of Guilding</h2>
 
-          <h3 className="text-2xl font-bold mt-6 mb-4">For Contributors</h3>
+          <h3 className="text-2xl mt-6 mb-4">For Contributors</h3>
           <ul className="list-disc pl-8 mb-6">
             <li>
               <strong>Collective Bargaining Power</strong>: Individuals gain
@@ -179,7 +179,7 @@ export default function DeepPage() {
             </li>
           </ul>
 
-          <h3 className="text-2xl font-bold mt-6 mb-4">For Funders</h3>
+          <h3 className="text-2xl mt-6 mb-4">For Funders</h3>
           <ul className="list-disc pl-8 mb-6">
             <li>
               <strong>Simplified Discovery</strong>: Guilds create legible
@@ -203,7 +203,7 @@ export default function DeepPage() {
             </li>
           </ul>
 
-          <h3 className="text-2xl font-bold mt-6 mb-4">For the Ecosystem</h3>
+          <h3 className="text-2xl mt-6 mb-4">For the Ecosystem</h3>
           <ul className="list-disc pl-8 mb-6">
             <li>
               <strong>Knowledge Preservation</strong>: Guilds maintain
@@ -229,9 +229,9 @@ export default function DeepPage() {
         </section>
 
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Implementation Approaches</h2>
+          <h2 className="text-3xl mb-6">Implementation Approaches</h2>
 
-          <h3 className="text-2xl font-bold mt-6 mb-4">Formation Logic</h3>
+          <h3 className="text-2xl mt-6 mb-4">Formation Logic</h3>
           <p className="mb-4">Guilds typically evolve through these stages:</p>
           <ol className="list-decimal pl-8 mb-6">
             <li>
@@ -257,9 +257,9 @@ export default function DeepPage() {
             value matures.
           </p>
 
-          <h3 className="text-2xl font-bold mt-6 mb-4">Weighting Methods</h3>
+          <h3 className="text-2xl mt-6 mb-4">Weighting Methods</h3>
 
-          <h4 className="text-xl font-bold mt-4 mb-2">
+          <h4 className="text-xl mt-4 mb-2">
             Qualitative Approaches
           </h4>
           <ul className="list-disc pl-8 mb-4">
@@ -277,7 +277,7 @@ export default function DeepPage() {
             </li>
           </ul>
 
-          <h4 className="text-xl font-bold mt-4 mb-2">
+          <h4 className="text-xl mt-4 mb-2">
             Quantitative Approaches
           </h4>
           <ul className="list-disc pl-8 mb-6">
@@ -300,7 +300,7 @@ export default function DeepPage() {
             multiple signals to create fair, nuanced contribution recognition.
           </p>
 
-          <h3 className="text-2xl font-bold mt-6 mb-4">Nested Registries</h3>
+          <h3 className="text-2xl mt-6 mb-4">Nested Registries</h3>
           <p className="mb-4">
             As the guild ecosystem matures, we'll see the emergence of "guilds
             of guilds" - nested registries that coordinate across specialized
@@ -320,52 +320,52 @@ export default function DeepPage() {
         </section>
 
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Glossary</h2>
+          <h2 className="text-3xl mb-6">Glossary</h2>
 
           <dl className="mb-6">
-            <dt className="font-bold mt-4">Attractor</dt>
+            <dt className="mt-4">Attractor</dt>
             <dd className="pl-4 mb-2">
               A specialized SCR with a splitter component that receives and
               distributes resources.
             </dd>
 
-            <dt className="font-bold mt-4">Curation Logic</dt>
+            <dt className="mt-4">Curation Logic</dt>
             <dd className="pl-4 mb-2">
               The rules and processes by which a guild determines who belongs in
               its registry and at what weight.
             </dd>
 
-            <dt className="font-bold mt-4">Guild</dt>
+            <dt className="mt-4">Guild</dt>
             <dd className="pl-4 mb-2">
               A self-organizing group of contributors sharing a common purpose,
               represented by a self-curating registry on Ethereum.
             </dd>
 
-            <dt className="font-bold mt-4">Guilding</dt>
+            <dt className="mt-4">Guilding</dt>
             <dd className="pl-4 mb-2">
               The practice of creating, stewarding, enabling, or studying
               guild-based organizations.
             </dd>
 
-            <dt className="font-bold mt-4">Public Goods</dt>
+            <dt className="mt-4">Public Goods</dt>
             <dd className="pl-4 mb-2">
               Non-excludable resources that benefit the ecosystem but are
               difficult to monetize directly.
             </dd>
 
-            <dt className="font-bold mt-4">Self-Curating Registry (SCR)</dt>
+            <dt className="mt-4">Self-Curating Registry (SCR)</dt>
             <dd className="pl-4 mb-2">
               An on-chain record of data (typically addresses) that is
               maintained by the same entities listed within it.
             </dd>
 
-            <dt className="font-bold mt-4">Splitting Logic</dt>
+            <dt className="mt-4">Splitting Logic</dt>
             <dd className="pl-4 mb-2">
               The rules determining how resources are distributed among guild
               members.
             </dd>
 
-            <dt className="font-bold mt-4">Weighting</dt>
+            <dt className="mt-4">Weighting</dt>
             <dd className="pl-4 mb-2">
               The relative allocation of voting power and/or resource
               distribution assigned to each member of a guild.
