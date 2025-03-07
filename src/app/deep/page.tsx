@@ -297,9 +297,9 @@ export default function DeepPage() {
 
           <h3 className="text-2xl mt-6 mb-4">Nested Registries</h3>
           <p className="mb-4">
-            As the guild ecosystem matures, we'll see the emergence of "guilds
-            of guilds" - nested registries that coordinate across specialized
-            domains:
+            As the guild ecosystem matures, we&apos;ll see the emergence of
+            &quot;guilds of guilds&quot; - nested registries that coordinate
+            across specialized domains:
           </p>
           <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded mb-4 text-center">
             Public Goods Fund <br /> / | \ <br />
