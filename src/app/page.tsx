@@ -1,7 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
-import Image from "next/image";
 import Link from "next/link";
+
 import Articles from "@/components/Articles";
 const DynamicGraph = dynamic(() => import("@/components/Graph"), {
   ssr: false,
@@ -246,60 +246,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <footer className="row-start-3 flex sm:flex-row flex-col gap-6 flex-wrap items-center justify-between">
-        <p>
-          Built on{" "}
-          <a href="ethereum.org" target="_blank" rel="noopener noreferrer">
-            Ethereum
-          </a>
-        </p>
-        <div className="flex sm:flex-row flex-col gap-6">
-          <a
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-            href="https://github.com/oovg/guildguildxyz"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              aria-hidden
-              src="/file.svg"
-              alt="File icon"
-              width={16}
-              height={16}
-            />
-            Go to Repo →
-          </a>
-          <a
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-            href="https://discord.gg/JRvgcnha"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              aria-hidden
-              src="/window.svg"
-              alt="Window icon"
-              width={16}
-              height={16}
-            />
-            Go to Discord →
-          </a>
-          <a
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-            href="https://paragraph.xyz/@guildguild/guild-guild"
-            rel="noopener noreferrer"
-          >
-            <Image
-              aria-hidden
-              src="/globe.svg"
-              alt="Globe icon"
-              width={16}
-              height={16}
-            />
-            Read Announcement →
-          </a>
-        </div>
-      </footer>
     </div>
   );
 }
