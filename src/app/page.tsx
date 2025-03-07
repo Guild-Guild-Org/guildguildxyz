@@ -16,7 +16,7 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-content container">
-          <h1>Guild Guild</h1>
+          <h1 className="bg-accent">Guild Guild</h1>
           <h3>
             A locus of coordination for gathering and distributing the means of
             Guilding on Ethereum.
@@ -32,7 +32,7 @@ export default function Home() {
           </ol>
           <div className="flex gap-4 mt-8 items-start flex-col sm:flex-row">
             <a
-              className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:text-[rgba(var(--background-rgba))] hover:bg-[rgba(var(--background-rgba)]) dark:hover:bg-[rgba(var(--foreground-rgba))] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+              className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:text-[rgb(var(--background-rgb))] hover:bg-[rgb(var(--background-rgb))] dark:hover:bg-[rgb(var(--foreground-rgb))] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
               href="https://paragraph.xyz/@guildguild/guild-guild"
               target="_blank"
               rel="noopener noreferrer"
@@ -40,7 +40,7 @@ export default function Home() {
               Read Announcement
             </a>
             <a
-              className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-[rgba(var(--foreground-rgba))] gap-2 text-[rgba(var(--background-rgba))] hover:text-[rgba(var(--foreground-rgba))] hover:bg-[rgba(var(--background-rgba))] dark:hover:bg-[rgba(var(--background-rgba))] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+              className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-[rgb(var(--foreground-rgb))] gap-2 text-[rgb(var(--background-rgb))] hover:text-[rgb(var(--foreground-rgb))] hover:bg-[rgb(var(--background-rgb))] dark:hover:bg-[rgb(var(--background-rgb))] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
               href="https://discord.gg/JRvgcnha"
               target="_blank"
               rel="noopener noreferrer"
@@ -50,7 +50,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row py-20">
+        <div className="flex gap-4 items-start flex-col sm:flex-row py-20">
           <h2 className="min-w-xs sm:pr-4 sm:border-r-2 sm:border-white-900">
             The Postmodern Guild
           </h2>
@@ -64,7 +64,7 @@ export default function Home() {
           </p>
         </div>
         <Articles />
-        <div className="flex gap-4 items-center flex-col sm:flex-row py-20">
+        <div className="flex gap-4 items-start flex-col sm:flex-row py-20">
           <h3 className="min-w-xs sm:pr-4 sm:border-r-2 sm:border-white-900">
             The Primitive: Self-curating Registry
           </h3>

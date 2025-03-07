@@ -1,6 +1,7 @@
 import ForceGraph2d from "react-force-graph-2d";
 import React from "react";
-import { genRandomTree } from "@/datasets/random-data.js";
+// import { genRandomTree } from "@/datasets/random-data.js";
+import dataMiserables from "@/datasets/miserables.json";
 
 // const sampleData = {
 //   nodes: [
@@ -57,12 +58,16 @@ import { genRandomTree } from "@/datasets/random-data.js";
 export default function Graph() {
   return (
     <ForceGraph2d
-      graphData={genRandomTree()}
-      // graphData={sampleData}
+      // graphData={genRandomTree()}
+      graphData={dataMiserables}
+      nodeLabel="id"
+      nodeAutoColorBy="group"
       backgroundColor="rgba(0,0,0,0)"
       nodeColor={(node) => (node.color = "#32cd32")}
       linkColor={(link) => (link.color = "#32cd32")}
       linkWidth={2}
+      linkDirectionalParticles="value"
+      linkDirectionalParticleSpeed={(d) => d.value * 0.001}
     />
   );
 }

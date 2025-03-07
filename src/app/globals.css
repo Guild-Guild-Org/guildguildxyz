@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --foreground-rgba: 0, 0, 0, 1;
-  --background-rgba: 255, 255, 255, 1;
+  --foreground-rgb: 0, 0, 0, 1;
+  --background-rgb: 255, 255, 255, 1;
 }
 
 .dark {
-  --foreground-rgba: 255, 255, 255, 1;
-  --background-rgba: 0, 0, 0, 1;
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 0, 0, 0;
 }
 
 body {
-  color: rgba(var(--foreground-rgba));
-  background-color: rgba(var(--background-rgba));
+  color: rgba(var(--foreground-rgb));
+  background-color: rgba(var(--background-rgb));
 }
 
 h1 {
