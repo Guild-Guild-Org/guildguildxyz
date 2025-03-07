@@ -241,7 +241,7 @@ export default function Home() {
             </ul>
             <p className="mt-4">
               Join us in building infrastructure for the next generation of
-              collective power.
+              collective organizing on Ethereum.
             </p>
           </div>
         </div>
