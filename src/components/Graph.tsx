@@ -65,7 +65,7 @@ export default function Graph() {
       backgroundColor="rgba(0,0,0,0)"
       nodeColor={(node) => (node.color = "#32cd32")}
       linkColor={(link) => (link.color = "#32cd32")}
-      linkWidth={2}
+      linkWidth={1}
       linkDirectionalParticles="value"
       linkDirectionalParticleSpeed={(d) => d.value * 0.001}
     />
