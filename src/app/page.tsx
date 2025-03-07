@@ -29,7 +29,7 @@ export default function Home() {
             <li className="mb-2">
               Support builders of tools and organizers of guilds
             </li>
-            <li>Network Guilds for further disambiguation of autonomy</li>
+            <li>Network Guilds for further coordination cost savings</li>
           </ol>
           <div className="flex gap-4 mt-8 items-start flex-col sm:flex-row">
             <a
