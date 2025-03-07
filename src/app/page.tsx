@@ -1,6 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import Link from "next/link";
 import Articles from "@/components/Articles";
 const DynamicGraph = dynamic(() => import("@/components/Graph"), {
   ssr: false,
@@ -51,9 +52,14 @@ export default function Home() {
         </div>
 
         <div className="flex gap-4 items-start flex-col sm:flex-row py-20">
-          <h2 className="min-w-xs sm:pr-4 sm:border-r-2 sm:border-white-900">
-            The Postmodern Guild
-          </h2>
+          <div>
+            <h2 className="min-w-xs sm:pr-4 sm:border-r-2 sm:border-white-900">
+              The Modern Guild
+            </h2>
+            <Link className="mt-8 hover:text-accent" href="/deep">
+              View Deep Dive
+            </Link>
+          </div>
           <p>
             A guild is a community of contributors who collaborate around a
             shared purpose. Modern guilds on Ethereum create collective
@@ -63,11 +69,89 @@ export default function Home() {
             while reducing coordination costs.
           </p>
         </div>
-        <Articles />
+        <div className="flex flex-col sm:flex-row w-full">
+          <h3 className="mb-6">The Benefits of Guilding</h3>
+        </div>
+        <section className="mb-12 text-sm flex flex-col sm:flex-row gap-2 w-full">
+          <div className="max-w-xs">
+            <h4 className="mt-6 mb-4">For Contributors</h4>
+            <p>
+              <strong>Collective Bargaining Power</strong>: Individuals gain
+              leverage by organizing with peers
+            </p>
+            <p>
+              <strong>Reduced Volatility</strong>: Pooled funding creates more
+              stable income streams
+            </p>
+            <p>
+              <strong>Focus on Craft</strong>: Less time spent on fundraising
+              and more on specialized work
+            </p>
+            <p>
+              <strong>Professional Development</strong>: Access to knowledge
+              sharing and mentorship
+            </p>
+            <p>
+              <strong>Shared Identity</strong>: Connection to a recognized,
+              respected collective
+            </p>
+          </div>
+          <div className="max-w-xs">
+            <h4 className="mt-6 mb-4">For Funders</h4>
+            <p>
+              <strong>Simplified Discovery</strong>: Guilds create legible
+              interfaces to specialized talent pools
+            </p>
+            <p>
+              <strong>Reduced Diligence Costs</strong>: Leverage collective
+              reputation and curation
+            </p>
+            <p>
+              <strong>Aligned Incentives</strong>: Support self-organizing
+              groups with proven track records
+            </p>
+            <p>
+              <strong>Increased Impact</strong>: More efficient resource
+              allocation to high-value contributors
+            </p>
+            <p>
+              <strong>Long-term Relationships</strong>: Sustained support for
+              critical domains
+            </p>
+          </div>
+          <div className="max-w-xs">
+            <h4 className="text-2xl mt-6 mb-4">For the Ecosystem</h4>
+
+            <p>
+              <strong>Knowledge Preservation</strong>: Guilds maintain
+              specialized expertise over time
+            </p>
+            <p>
+              <strong>Coordination Efficiency</strong>: Reduced attention costs
+              for matching talent with funding
+            </p>
+            <p>
+              <strong>Domain Specialization</strong>: Development of deep
+              expertise in critical areas
+            </p>
+            <p>
+              <strong>Pluralism</strong>: Multiple overlapping guilds prevent
+              capture and centralization
+            </p>
+            <p>
+              <strong>Public Goods Support</strong>: Sustainable funding models
+              for non-monetizable work
+            </p>
+          </div>
+        </section>
+
         <div className="flex gap-4 items-start flex-col sm:flex-row py-20">
-          <h3 className="min-w-xs sm:pr-4 sm:border-r-2 sm:border-white-900">
-            The Primitive: Self-curating Registry
-          </h3>
+          <div className="min-w-xs sm:pr-4 sm:border-r-2 sm:border-white-900">
+            <h3>The Primitive: Self-curating Registry</h3>
+            <Link className="mt-8 hover:text-accent" href="/deep">
+              View Deep Dive
+            </Link>
+          </div>
           <p>
             The technical foundation of a guild is a Self-Curating Registry
             (SCR) - a smart contract primitive where members maintain their own
@@ -78,34 +162,9 @@ export default function Home() {
             funding destination and a group identity.
           </p>
         </div>
-        <div className="max-w-xl flex gap-4 items-start flex-col py-20">
-          <h3>Guild Primitives</h3>
-          <p>Guild infrastructure is built on proven Ethereum primitives:</p>
-          <p>
-            <strong>Governance & Curation:</strong> Moloch v3 powers the
-            self-curation mechanism, enabling guilds to manage membership and
-            weights through democratic processes while maintaining individual
-            autonomy.
-          </p>
-          <p>
-            <strong>Distribution:</strong> 0xSplit facilitates transparent and
-            efficient fund distribution according to contribution weights, with
-            configurable distribution triggers.
-          </p>
-          <p>
-            <strong>Streaming:</strong> Superfluid enables continuous streaming
-            of funds, creating predictable resource flows for guild members.
-          </p>
-          <p>
-            <strong>Role Management:</strong> Hats Protocol provides flexible
-            role and permission management for specialized functions within
-            guilds.
-          </p>
-          <p>
-            <strong>Contribution Tracking:</strong> Coordinape supports
-            peer-based contribution evaluation for fair resource allocation.
-          </p>
-        </div>
+
+        <Articles />
+
         <div className="flex gap-4 items-start flex-col py-20 max-w-xl">
           <h2 className="min-w-xs sm:pr-4 sm:border-r-2 sm:border-white-900">
             The Future of Guilds
@@ -187,51 +246,59 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://github.com/oovg/guildguildxyz"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Go to Repo →
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://discord.gg/JRvgcnha"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Go to Discord →
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://paragraph.xyz/@guildguild/guild-guild"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Read Announcement →
-        </a>
+      <footer className="row-start-3 flex sm:flex-row flex-col gap-6 flex-wrap items-center justify-between">
+        <p>
+          Built on{" "}
+          <a href="ethereum.org" target="_blank" rel="noopener noreferrer">
+            Ethereum
+          </a>
+        </p>
+        <div className="flex sm:flex-row flex-col gap-6">
+          <a
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://github.com/oovg/guildguildxyz"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              aria-hidden
+              src="/file.svg"
+              alt="File icon"
+              width={16}
+              height={16}
+            />
+            Go to Repo →
+          </a>
+          <a
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://discord.gg/JRvgcnha"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              aria-hidden
+              src="/window.svg"
+              alt="Window icon"
+              width={16}
+              height={16}
+            />
+            Go to Discord →
+          </a>
+          <a
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://paragraph.xyz/@guildguild/guild-guild"
+            rel="noopener noreferrer"
+          >
+            <Image
+              aria-hidden
+              src="/globe.svg"
+              alt="Globe icon"
+              width={16}
+              height={16}
+            />
+            Read Announcement →
+          </a>
+        </div>
       </footer>
     </div>
   );

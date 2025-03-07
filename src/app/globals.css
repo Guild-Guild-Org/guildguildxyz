@@ -21,6 +21,10 @@ body {
   background-color: rgb(var(--background-rgb));
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 h1 {
   font-size: 3rem;
 }
