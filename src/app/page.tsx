@@ -42,7 +42,7 @@ export default function Home() {
             </a>
             <a
               className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-[rgb(var(--foreground-rgb))] gap-2 text-accent text-[rgb(var(--foreground-rgb))] hover:text-[rgb(var(--foreground-rgb))] hover:transition-colors hover:bg-[rgb(var(--foreground-rgb))] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-              href="https://discord.gg/JRvgcnha"
+              href="https://discord.gg/t6AWuYrp"
               target="_blank"
               rel="noopener noreferrer"
             >
