@@ -61,8 +61,6 @@ export default function Graph() {
       // graphData={genRandomTree()}
       graphData={dataGuilds}
       nodeLabel="id"
-      width={1200}
-      height={800}
       nodeAutoColorBy="group"
       backgroundColor="rgba(0,0,0,0)"
       nodeColor={(node) => (node.color = "#32cd32")}
