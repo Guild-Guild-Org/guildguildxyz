@@ -1,7 +1,7 @@
 import ForceGraph2d from "react-force-graph-2d";
 import React from "react";
 // import { genRandomTree } from "@/datasets/random-data.js";
-import dataMiserables from "@/datasets/miserables.json";
+import dataGuilds from "@/datasets/guilds.json";
 
 // const sampleData = {
 //   nodes: [
@@ -59,8 +59,10 @@ export default function Graph() {
   return (
     <ForceGraph2d
       // graphData={genRandomTree()}
-      graphData={dataMiserables}
+      graphData={dataGuilds}
       nodeLabel="id"
+      width={1200}
+      height={800}
       nodeAutoColorBy="group"
       backgroundColor="rgba(0,0,0,0)"
       nodeColor={(node) => (node.color = "#32cd32")}
