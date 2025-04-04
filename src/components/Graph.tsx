@@ -63,7 +63,6 @@ export default function Graph() {
       nodeLabel="id"
       width={1200}
       height={800}
-      forceEngine="ngraph"
       nodeAutoColorBy="group"
       backgroundColor="rgba(0,0,0,0)"
       nodeColor={(node) => (node.color = "#32cd32")}
