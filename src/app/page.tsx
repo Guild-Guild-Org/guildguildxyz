@@ -1,6 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
 import Link from "next/link";
+import Image from "next/image";
 
 import Articles from "@/components/Articles";
 const DynamicGraph = dynamic(() => import("@/components/Graph"), {
@@ -165,7 +166,17 @@ export default function Home() {
 
         <Articles />
 
-        <div className="flex gap-4 items-start flex-col py-20 max-w-xl">
+        <div className="flex gap-4 items-start flex-col py-20 max-w-xl relative">
+          <div className="absImage-container">
+            <div className="hero">
+              <Image
+                alt="gg graphs"
+                src="/gg_graphs.png"
+                width="1920"
+                height="1920"
+              />
+            </div>
+          </div>
           <h2 className="min-w-xs sm:pr-4 sm:border-r-2 sm:border-white-900">
             The Future of Guilds
           </h2>
