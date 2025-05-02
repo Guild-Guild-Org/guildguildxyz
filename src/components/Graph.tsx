@@ -1,70 +1,27 @@
 import ForceGraph2d from "react-force-graph-2d";
 import React from "react";
 // import { genRandomTree } from "@/datasets/random-data.js";
-import dataGuilds from "@/datasets/guilds.json";
-
-// const sampleData = {
-//   nodes: [
-//     {
-//       id: "id1",
-//       name: "name1",
-//       val: 1,
-//     },
-//     {
-//       id: "id2",
-//       name: "name2",
-//       val: 10,
-//     },
-//     {
-//       id: "id3",
-//       name: "name3",
-//       val: 10,
-//     },
-//     {
-//       id: "id4",
-//       name: "name4",
-//       val: 10,
-//     },
-//     {
-//       id: "id5",
-//       name: "name5",
-//       val: 10,
-//     },
-//   ],
-//   links: [
-//     {
-//       source: "id1",
-//       target: "id2",
-//     },
-//     {
-//       source: "id2",
-//       target: "id4",
-//     },
-//     {
-//       source: "id5",
-//       target: "id1",
-//     },
-//     {
-//       source: "id3",
-//       target: "id5",
-//     },
-//     {
-//       source: "id5",
-//       target: "id1",
-//     },
-//   ],
-// };
+// import dataGuilds from "@/datasets/guilds.json";
+import dataPoly from "@/datasets/poly.json";
 
 export default function Graph() {
   return (
     <ForceGraph2d
       // graphData={genRandomTree()}
-      graphData={dataGuilds}
+      graphData={dataPoly}
       nodeLabel="id"
       nodeAutoColorBy="group"
       backgroundColor="rgba(0,0,0,0)"
-      nodeColor={(node) => (node.color = "#32cd32")}
-      linkColor={(link) => (link.color = "#32cd32")}
+      nodeColor={(node) => {
+        if (node.group === 1) {
+          return "#3F3CE0";
+        } else if (node.group === 2) {
+          return "#32cd32";
+        } else {
+          return "red";
+        }
+      }}
+      linkColor={(link) => (link.color = "#fff")}
       linkWidth={1}
       linkDirectionalParticles="value"
       linkDirectionalParticleSpeed={(d) => d.value * 0.001}
