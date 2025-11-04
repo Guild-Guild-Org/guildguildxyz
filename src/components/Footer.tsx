@@ -46,7 +46,7 @@ export default function Footer() {
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://paragraph.xyz/@guildguild/guild-guild"
+          href="https://x.com/guildguild_eth"
           rel="noopener noreferrer"
         >
           <Image
@@ -56,7 +56,7 @@ export default function Footer() {
             width={16}
             height={16}
           />
-          Read Announcement →
+          Follow on X →
         </a>
       </div>
     </footer>
