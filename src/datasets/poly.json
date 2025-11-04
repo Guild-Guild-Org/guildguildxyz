@@ -1,0 +1,182 @@
+{
+  "nodes": [
+    {
+      "id": "A2",
+      "group": 1
+    },
+    {
+      "id": "A3",
+      "group": 1
+    },
+    {
+      "id": "A4",
+      "group": 1
+    },
+    {
+      "id": "A5",
+      "group": 1
+    },
+    {
+      "id": "A6",
+      "group": 1
+    },
+    {
+      "id": "A7",
+      "group": 1
+    },
+    {
+      "id": "A8",
+      "group": 1
+    },
+    {
+      "id": "A9",
+      "group": 1
+    },
+    {
+      "id": "A10",
+      "group": 1
+    },
+    {
+      "id": "A11",
+      "group": 1
+    },
+    {
+      "id": "A12",
+      "group": 1
+    },
+    {
+      "id": "A13",
+      "group": 2
+    },
+    {
+      "id": "A14",
+      "group": 2
+    },
+    {
+      "id": "A15",
+      "group": 2
+    }
+  ],
+  "links": [
+    {
+      "source": "A2",
+      "target": "A13",
+      "value": 6
+    },
+    {
+      "source": "A3",
+      "target": "A13",
+      "value": 4
+    },
+    {
+      "source": "A4",
+      "target": "A13",
+      "value": 3
+    },
+    {
+      "source": "A5",
+      "target": "A14",
+      "value": 5
+    },
+    {
+      "source": "A6",
+      "target": "A14",
+      "value": 1
+    },
+    {
+      "source": "A7",
+      "target": "A14",
+      "value": 6
+    },
+    {
+      "source": "A8",
+      "target": "A14",
+      "value": 5
+    },
+    {
+      "source": "A9",
+      "target": "A14",
+      "value": 3
+    },
+    {
+      "source": "A10",
+      "target": "A14",
+      "value": 6
+    },
+    {
+      "source": "A11",
+      "target": "A15",
+      "value": 3
+    },
+    {
+      "source": "A12",
+      "target": "A15",
+      "value": 3
+    },
+    {
+      "source": "A13",
+      "target": "A2",
+      "value": 5
+    },
+    {
+      "source": "A13",
+      "target": "A3",
+      "value": 5
+    },
+    {
+      "source": "A13",
+      "target": "A4",
+      "value": 3
+    },
+    {
+      "source": "A14",
+      "target": "A5",
+      "value": 5
+    },
+    {
+      "source": "A14",
+      "target": "A6",
+      "value": 2
+    },
+    {
+      "source": "A14",
+      "target": "A7",
+      "value": 6
+    },
+    {
+      "source": "A14",
+      "target": "A8",
+      "value": 6
+    },
+    {
+      "source": "A14",
+      "target": "A9",
+      "value": 1
+    },
+    {
+      "source": "A14",
+      "target": "A10",
+      "value": 3
+    },
+    {
+      "source": "A15",
+      "target": "A11",
+      "value": 3
+    },
+    {
+      "source": "A15",
+      "target": "A12",
+      "value": 4
+    },
+    {
+      "source": "A15",
+      "target": "A2",
+      "value": 3
+    },
+    {
+      "source": "A15",
+      "target": "A8",
+      "value": 4
+    }
+  ]
+}
