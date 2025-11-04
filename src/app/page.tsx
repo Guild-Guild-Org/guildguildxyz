@@ -34,11 +34,11 @@ export default function Home() {
           <div className="flex gap-4 mt-8 items-start flex-col sm:flex-row">
             <a
               className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:text-accent hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-              href="https://paragraph.xyz/@guildguild/guild-guild"
+              href="https://paragraph.com/@guildguild/guilds-reference-architecture"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Read Announcement
+              View Reference Architecture
             </a>
             <a
               className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-[rgb(var(--foreground-rgb))] gap-2 text-accent text-[rgb(var(--foreground-rgb))] hover:text-[rgb(var(--foreground-rgb))] hover:transition-colors hover:bg-[rgb(var(--foreground-rgb))] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
