@@ -7,6 +7,21 @@ export default function Articles() {
       <div className="w-full flex flex-col sm:flex-row gap-8 flex-wrap">
         <a
           className="card hover:text-accent"
+          href="https://paragraph.com/@guildguild/guild-guild"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div className="py-8">
+            <p className="text-xl">
+              Guild Guild Introduction
+            </p>
+            <p>
+              by <i>Guild Guild</i>
+            </p>
+          </div>
+        </a>
+        <a
+          className="card hover:text-accent"
           href="https://trent.mirror.xyz/GDDRqetgglGR5IYK1uTXxLalwIH6pBF9nulmY9zarUw"
           rel="noopener noreferrer"
           target="_blank"
